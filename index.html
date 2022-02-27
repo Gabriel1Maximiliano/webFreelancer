@@ -63,7 +63,7 @@
 
           
         
-          <h3>Diseño Web</h3>
+          <h3 class="color-fondo">Diseño Web</h3>
 
         <div class="iconos">
           <!--Segundo icono-->
@@ -95,7 +95,7 @@
           </p>
         </section>
         <section class="servicio">
-          <h3>Aplicación Web</h3>
+          <h3 class="color-fondo">Aplicación Web</h3>
             <!--tercer icono-->
             <div class="iconos">
           <svg
@@ -147,7 +147,7 @@
           </p>
         </section>
         <section class="servicio">
-          <h3>E-Commerce</h3>
+          <h3 class="color-fondo">E-Commerce</h3>
             <!--quinto icono-->
             <div class="iconos">
           <svg
@@ -183,36 +183,45 @@
           </p>
         </section>
       </div>
-    </main>
-    <footer>
-      <h2>Contacto</h2>
-      <form>
+   
+    
+      <h2 class="color-fondo">Contacto</h2>
+      <form class="formulario">
         <fieldset>
           <!--el legend se usa para darle titulo al formulario-->
 
           <legend>Contáctanos llenando el formulario</legend>
+
+          <div class="contenedor-campos">
+            <div class="campo">
+             <label>Nombre</label>
+             <input class="imput-text" type="text" placeholder="Escribe tu nombre" />
+            </div class>
+            <div class="campo">
+             <label>email</label>
+             <input class="imput-text" type="email" placeholder="Escribe tu email" />
+            </div>
+            <div class="campo">
+             <label>Teléfono</label>
+             <input class="imput-text" type="number" placeholder="Escribe tu teléfono" />
+            </div>
+            <div class="campo">
+
+             <label>Mensaje</label>
+             <textarea class="imput-text" name="text"></textarea>
+
+            </div>
+          </div><!--contenedor-campos-->
+
           <div>
-            <label>Nombre</label>
-            <input type="text" placeholder="Escribe tu nombre" />
+            <button class="boton" type="submit" value="send">Enviar</button>
           </div>
-          <div>
-            <label>email</label>
-            <input type="email" placeholder="Escribe tu email" />
-          </div>
-          <div>
-            <label>Teléfono</label>
-            <input type="number" placeholder="Escribe tu teléfono" />
-          </div>
-          <div>
-            <label>Mensaje</label>
-          </div>
-          <div>
-            <textarea name="text"></textarea>
-            <button type="submit" value="send">Enviar</button>
-          </div>
+          
         </fieldset>
       </form>
-      <p>Todos los derechos reervados</p>
-    </footer>
+    </main>
+  <footer class="footer">
+    <p>Todos los derechos reservados</p>
+  </footer>
   </body>
 </html>
